@@ -1,0 +1,95 @@
+export const profile = {
+  studioName: "THE INNOVATION STUDIO — AADHIDHYA.S",
+  brandShort: "AADHIDHYA.S",
+  fullName: "AADHIDHYA.S",
+  tagline: "Curiosity Creates. Intelligence Innovates. Technology Transforms.",
+  heroQuote: "Turning Curiosity Into Intelligent Creations.",
+  linkedinUrl: "https://linkedin.com/in/aadhidhya-s-180303391",
+  // Add your real GitHub URL and optional Formspree/Web3Forms endpoint here when ready
+  githubUrl: "",
+  email: "aadhidhya.s2025aiml@sece.ac.in",
+  contactFormEndpoint: "",
+  education: {
+    institution: "Sri Eshwar College of Engineering",
+    degree: "B.Tech – Artificial Intelligence and Machine Learning",
+    year: "Second Year | Batch 2029",
+    location: "Coimbatore, Tamil Nadu, India.",
+  },
+  cyclingRoles: [
+    "AI & ML ENTHUSIAST",
+    "ROBOTICS EXPLORER",
+    "SOFTWARE DEVELOPER",
+    "CREATIVE PROBLEM SOLVER",
+    "TECHNOLOGY INNOVATOR",
+  ],
+  achievements: [
+    {
+      value: 1271,
+      suffix: "+",
+      label: "Programming problems solved on SkillRack.",
+      accent: "electric" as const,
+    },
+    {
+      value: 19,
+      suffix: "",
+      label: "Certificates earned.",
+      accent: "coral" as const,
+    },
+    {
+      value: 50,
+      suffix: "",
+      label: "Java average challenges completed.",
+      accent: "teal" as const,
+    },
+  ],
+  journey: [
+    {
+      step: "01",
+      title: "Started exploring programming fundamentals.",
+      detail: "Built core logic, syntax discipline, and problem-solving habits.",
+      accent: "electric",
+    },
+    {
+      step: "02",
+      title: "Practised C, C++, Java, and Python.",
+      detail: "Applied object-oriented design and multi-language problem solving.",
+      accent: "coral",
+    },
+    {
+      step: "03",
+      title: "Developed an interest in Artificial Intelligence and Machine Learning.",
+      detail: "Began studying how intelligent models perceive patterns and make decisions.",
+      accent: "teal",
+    },
+    {
+      step: "04",
+      title: "Started experimenting with ESP32 hardware.",
+      detail: "Explored four-wheel motor control, LEDs, and ESP32-CAM capture.",
+      accent: "gold",
+    },
+    {
+      step: "05",
+      title: "Explored computer vision and YOLO.",
+      detail: "Built detection workflows combining Python, YOLO, and OpenCV.",
+      accent: "electric",
+    },
+    {
+      step: "06",
+      title: "Began developing the CivicLens AI concept.",
+      detail: "Unified AI vision, robotic arm manipulation, and automated waste segregation.",
+      accent: "coral",
+    },
+    {
+      step: "07",
+      title: "Explored ROS 2 Humble and Gazebo.",
+      detail: "Simulated autonomous collection vehicles and robotic arm workflows using SDF.",
+      accent: "teal",
+    },
+    {
+      step: "08",
+      title: "Continued developing desktop applications and algorithmic problem-solving skills.",
+      detail: "Built JavaFX + MySQL apps while practicing DSA, dynamic programming, and graphs.",
+      accent: "gold",
+    },
+  ],
+};

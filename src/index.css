@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #1b1421;
+    color: #f5f0e8;
+  }
+
+  body {
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    background-color: #1b1421;
+    color: #f5f0e8;
+    overflow-x: hidden;
+  }
+}
+
+.hero-display {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: clamp(2.35rem, 4.8vw, 4.35rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.section-display {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: clamp(2rem, 3.8vw, 3.35rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.orchid-grid {
+  background-image:
+    linear-gradient(to right, rgba(189, 167, 248, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(189, 167, 248, 0.06) 1px, transparent 1px);
+  background-size: 54px 54px;
+}
+
+.porcelain-grid {
+  background-image:
+    linear-gradient(to right, rgba(27, 20, 33, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(27, 20, 33, 0.05) 1px, transparent 1px);
+  background-size: 54px 54px;
+}
+
+@media (pointer: fine) {
+  .has-custom-cursor,
+  .has-custom-cursor a,
+  .has-custom-cursor button {
+    cursor: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
