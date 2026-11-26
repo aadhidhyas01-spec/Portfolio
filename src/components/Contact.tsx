@@ -15,7 +15,6 @@ import { MagneticButton } from "./MagneticButton";
 export function Contact() {
   const [copied, setCopied] = useState(false);
   const [copiedMessage, setCopiedMessage] = useState(false);
-  const [githubAlert, setGithubAlert] = useState(false);
   const [senderName, setSenderName] = useState("");
   const [senderEmail, setSenderEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -187,10 +186,12 @@ export function Contact() {
                 </button>
               </div>
 
-              <button
-                type="button"
-                onClick={() => setGithubAlert((prev) => !prev)}
-                className="flex w-full items-center justify-between rounded-2xl border border-dashed border-lavender/35 bg-aubergine/55 p-4 text-left transition-colors hover:border-lavender"
+              <a
+                href={profile.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                data-cursor="OPEN"
+                className="flex items-center justify-between rounded-2xl border border-lavender/25 bg-aubergine/80 p-4 transition-all hover:-translate-y-0.5 hover:border-lavender"
               >
                 <div className="flex items-center gap-3.5">
                   <span className="rounded-xl bg-lavender/15 p-2.5 text-lavender">
@@ -198,15 +199,13 @@ export function Contact() {
                   </span>
                   <div>
                     <p className="text-sm font-bold text-porcelain">GitHub</p>
-                    <p className="font-mono text-xs text-porcelain/65">
-                      {githubAlert
-                        ? "Editable placeholder — add your GitHub URL in src/data/profile.ts"
-                        : "GitHub profile placeholder (configurable)"}
+                    <p className="font-mono text-xs text-lavender/80">
+                      github.com/aadhidhyas01-spec
                     </p>
                   </div>
                 </div>
-                <span className="font-mono text-xs text-lavender/80">Placeholder</span>
-              </button>
+                <span className="font-mono text-xs font-semibold text-lavender">View Repos &rarr;</span>
+              </a>
             </div>
           </motion.div>
 

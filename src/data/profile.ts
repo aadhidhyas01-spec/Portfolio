@@ -6,7 +6,7 @@ export const profile = {
   heroQuote: "Turning Curiosity Into Intelligent Creations.",
   linkedinUrl: "https://linkedin.com/in/aadhidhya-s-180303391",
   // Add your real GitHub URL and optional Formspree/Web3Forms endpoint here when ready
-  githubUrl: "",
+  githubUrl: "https://github.com/aadhidhyas01-spec",
   email: "aadhidhya.s2025aiml@sece.ac.in",
   contactFormEndpoint: "",
   education: {

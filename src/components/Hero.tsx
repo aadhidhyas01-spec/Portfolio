@@ -14,7 +14,6 @@ const headlineLines = [
 
 export function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
-  const [githubNote, setGithubNote] = useState(false);
   const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
@@ -152,14 +151,15 @@ export function Hero() {
               <span>LinkedIn</span>
             </a>
 
-            <button
-              type="button"
-              onClick={() => setGithubNote((prev) => !prev)}
+            <a
+              href={profile.githubUrl}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-lavender/20 bg-blackberry/60 px-4 py-2 font-mono text-xs text-porcelain/85 transition-colors hover:border-papaya hover:text-papaya"
             >
               <Github className="h-3.5 w-3.5 text-papaya" />
-              <span>{githubNote ? "Set URL in profile.ts" : "GitHub (Editable)"}</span>
-            </button>
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
 
